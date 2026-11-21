@@ -169,7 +169,64 @@ opacity:0;
     margin: 20px auto;
 
 }
+.memory{
 
+background:rgba(255,255,255,0.35);
+
+backdrop-filter:blur(12px);
+
+-webkit-backdrop-filter:blur(12px);
+
+padding:12px;
+
+border-radius:25px;
+
+border:1px solid rgba(255,255,255,0.4);
+
+box-shadow:
+0 8px 25px rgba(255,182,193,0.25);
+
+transition:0.3s;
+
+}.memory:hover{
+
+transform:translateY(-5px);
+
+box-shadow:
+0 12px 30px rgba(255,105,180,0.35);
+
+}
+.page-title{
+
+font-family:'Great Vibes',cursive;
+
+font-size:80px;
+
+font-weight:normal;
+
+background:linear-gradient(
+90deg,
+#355e3b,
+#ff6b9f
+);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+margin-bottom:15px;
+
+}.food-subtitle{
+
+font-size:24px;
+
+font-style:italic;
+
+color:#6d4c41;
+
+margin-bottom:35px;
+
+}
 /* Photo sizing */
 
 .gallery img,
@@ -302,5 +359,160 @@ font-size:18px;
 font-weight:600;
 
 margin-top:10px;
+
+}
+.about-title{
+
+font-family:'Great Vibes',cursive;
+
+font-size:80px;
+
+font-weight:normal;
+
+background:linear-gradient(
+90deg,
+#355e3b,
+#ff6b9f
+);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+margin-bottom:10px;
+
+}
+.universe-title{
+
+font-family:'Poppins',sans-serif;
+
+font-size:32px;
+
+color:#8b5a6b;
+
+letter-spacing:2px;
+
+}
+.about-message{
+
+width:75%;
+
+margin:auto;
+
+font-size:24px;
+
+line-height:2;
+
+font-family:'Poppins',sans-serif;
+
+color:#4e342e;
+
+}
+.boy-title{
+
+font-family:'Great Vibes',cursive;
+
+font-size:60px;
+
+color:#6d4c41;
+
+margin-top:40px;
+
+}
+
+.memory img{
+
+transition:0.4s;
+
+}
+
+.memory:hover img{
+
+transform:scale(1.08);
+
+}
+.memory p{
+
+font-family:'Great Vibes',cursive;
+
+font-size:16px;
+
+color:#6d4c41;
+
+margin-top:15px;
+
+}
+.memory:nth-child(even){
+
+transform:rotate(2deg);
+
+}
+
+.memory:hover{
+
+transform:scale(1.05) rotate(0deg);
+
+z-index:99;
+
+}
+
+.memory{
+
+background:white;
+
+padding:12px 12px 30px 12px;
+
+border-radius:8px;
+
+box-shadow:
+0 10px 30px rgba(0,0,0,0.15);
+
+transform:rotate(-2deg);
+
+transition:0.4s;
+
+}
+
+.memory{
+
+background:white;
+
+padding:8px;
+
+border-radius:12px;
+
+box-shadow:
+0 8px 20px rgba(0,0,0,0.12);
+
+}
+.memory{
+
+background:rgba(255,255,255,0.15);
+
+padding:6px;
+
+border-radius:20px;
+
+backdrop-filter:blur(8px);
+
+border:1px solid rgba(255,255,255,0.25);
+
+}.memory{
+
+position:relative;
+
+}
+
+.memory::after{
+
+content:"💖";
+
+position:absolute;
+
+top:-10px;
+
+right:-5px;
+
+font-size:28px;
 
 }
