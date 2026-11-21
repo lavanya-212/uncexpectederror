@@ -365,7 +365,7 @@ margin-top:10px;
 
 font-family:'Great Vibes',cursive;
 
-font-size:80px;
+font-size:50px;
 
 font-weight:normal;
 
@@ -412,7 +412,7 @@ color:#4e342e;
 
 font-family:'Great Vibes',cursive;
 
-font-size:60px;
+font-size:40px;
 
 color:#6d4c41;
 
@@ -514,5 +514,17 @@ top:-10px;
 right:-5px;
 
 font-size:28px;
+
+}
+
+.gift-subtitle{
+
+font-size:24px;
+
+font-style:italic;
+
+color:#6d4c41;
+
+margin-bottom:35px;
 
 }
