@@ -13,12 +13,51 @@
 
 <div class="page">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
 
-<h1>HAPPY BIRTHDAY❤️</h1>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<h2>Counting Every Second Until Your Birthday</h2>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<h2 id="countdown"></h2>
+<h1 class="birthday-title">
+
+Happy Birthday ♡
+
+</h1>
+<h2 class="name-title">
+
+Ganesh • Chinna • Chinnodu • Nanna
+
+</h2>
+
+<p class="subtitle">
+
+Counting Every Second Until Your Birthday.. ♡
+
+</p>
+<div class="countdown-boxes">
+
+<div class="time-box">
+<span id="days">0</span>
+<p>Days</p>
+</div>
+
+<div class="time-box">
+<span id="hours">0</span>
+<p>Hours</p>
+</div>
+
+<div class="time-box">
+<span id="minutes">0</span>
+<p>Minutes</p>
+</div>
+
+<div class="time-box">
+<span id="seconds">0</span>
+<p>Seconds</p>
+</div>
+
+</div>
 
 <br>
 
@@ -51,15 +90,13 @@ let minutes=Math.floor((distance%(1000*60*60))/(1000*60));
 
 let seconds=Math.floor((distance%(1000*60))/1000);
 
-document.getElementById("countdown").innerHTML =
+document.getElementById("days").innerHTML=days;
 
-days + " Days   :  " +
+document.getElementById("hours").innerHTML=hours;
 
-hours + " Hours : " +
+document.getElementById("minutes").innerHTML=minutes;
 
-minutes + " Minutes  : " +
-
-seconds + " Seconds  ";
+document.getElementById("seconds").innerHTML=seconds;
 
 },1000);
 
