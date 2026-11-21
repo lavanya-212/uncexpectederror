@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Happy Birthday Nanna ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="page">
+
+
+<h1>HAPPY BIRTHDAY❤️</h1>
+
+<h2>Counting Every Second Until Your Birthday</h2>
+
+<h2 id="countdown"></h2>
+
+<br>
+
+<button onclick="window.location.href='about.html'">
+
+🎁 Open Birthday Surprise ❤️
+
+</button>
+
+</div>
+
+</div>
+
+<script>
+
+const birthday =
+new Date("December 2, 2026 00:00:00").getTime();
+
+setInterval(function(){
+
+let now = new Date().getTime();
+
+let distance = birthday-now;
+
+let days=Math.floor(distance/(1000*60*60*24));
+
+let hours=Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+
+let minutes=Math.floor((distance%(1000*60*60))/(1000*60));
+
+let seconds=Math.floor((distance%(1000*60))/1000);
+
+document.getElementById("countdown").innerHTML =
+
+days + " Days   :  " +
+
+hours + " Hours : " +
+
+minutes + " Minutes  : " +
+
+seconds + " Seconds  ";
+
+},1000);
+
+</script>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

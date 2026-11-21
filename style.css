@@ -1,0 +1,186 @@
+body{
+
+margin:0;
+
+font-family:'Segoe UI',sans-serif;
+
+background-image:url("./background1.png");
+
+background-size:cover;
+
+background-position:center;
+
+background-repeat:no-repeat;
+
+background-attachment:fixed;
+
+min-height:100vh;
+
+overflow-x:hidden;
+
+}
+
+.page{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    font-weight:700;
+
+    line-height:.0.5;
+
+}
+.page h1,
+.page h2,
+.page p{
+
+    margin-top:5px;
+
+    margin-bottom:5px;
+
+}
+
+.card{
+
+width:70%;
+
+max-width:1000px;
+
+margin:40px 0;
+
+background:rgba(255,255,255,0.65);
+
+padding:50px;
+
+border-radius:35px;
+
+text-align:center;
+
+box-shadow:0 0 30px rgba(255,182,193,0.8);
+
+backdrop-filter:blur(10px);
+
+-webkit-backdrop-filter:blur(10px);
+
+}
+button{
+
+background:#ff69b4;
+
+color:white;
+
+border:none;
+
+padding:14px 32px;
+
+border-radius:30px;
+
+font-size:18px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+box-shadow:0 0 12px pink;
+
+transition:0.3s;
+
+}
+
+button:hover{
+
+transform:scale(1.05);
+
+background:#ff4fa3;
+
+}
+
+/* Floating Hearts */
+
+.heart{
+
+position:fixed;
+
+bottom:-20px;
+
+color:#ff69b4;
+
+pointer-events:none;
+
+animation:floatUp 8s linear forwards;
+
+}
+
+@keyframes floatUp{
+
+0%{
+transform:translateY(0);
+opacity:1;
+}
+
+100%{
+transform:translateY(-120vh);
+opacity:0;
+}
+
+}
+/* Force exactly 2 photos per row */
+
+.gallery,
+.gallery-container,
+.food-gallery,
+.memory-gallery,
+.photo-gallery {
+
+    display: grid !important;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+
+    gap: 25px;
+
+    width: 90%;
+
+    max-width: 900px;
+
+    margin: 20px auto;
+
+}
+
+/* Photo sizing */
+
+.gallery img,
+.gallery-container img,
+.food-gallery img,
+.memory-gallery img,
+.photo-gallery img {
+
+    width: 100%;
+
+    height: 300px;
+
+    object-fit: cover;
+
+}
+
+.page {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-direction: column;
+
+    padding-top: 50px;
+
+}
