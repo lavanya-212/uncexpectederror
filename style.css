@@ -72,33 +72,50 @@ backdrop-filter:blur(10px);
 }
 button{
 
-background:#ff69b4;
+background:linear-gradient(
+90deg,
+#ff8abf,
+#ff5fa2,
+#ff8abf
+);
 
 color:white;
 
 border:none;
 
-padding:14px 32px;
+padding:20px 55px;
 
-border-radius:30px;
+font-size:20px;
 
-font-size:18px;
+font-weight:700;
 
-font-weight:bold;
+border-radius:50px;
 
 cursor:pointer;
 
-box-shadow:0 0 12px pink;
+box-shadow:
+0 0 15px rgba(255,105,180,0.5),
+0 0 30px rgba(255,182,193,0.4);
 
-transition:0.3s;
+transition:all 0.3s ease;
+
+letter-spacing:0.5px;
 
 }
 
 button:hover{
 
-transform:scale(1.05);
+transform:translateY(-3px) scale(1.03);
 
-background:#ff4fa3;
+box-shadow:
+0 0 25px rgba(255,105,180,0.8),
+0 0 40px rgba(255,182,193,0.6);
+
+}button{
+
+position:relative;
+
+overflow:hidden;
 
 }
 
@@ -182,5 +199,108 @@ opacity:0;
     flex-direction: column;
 
     padding-top: 50px;
+
+}
+.birthday-title{
+
+font-family:'Great Vibes',cursive;
+
+font-size:90px;
+
+font-weight:normal;
+
+margin:0;
+
+background:linear-gradient(
+90deg,
+#355e3b,
+#ff6b9f
+);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+}
+.name-title{
+
+font-family:'Poppins',sans-serif;
+
+font-size:24px;
+
+letter-spacing:4px;
+
+color:#a05c78;
+
+margin-top:10px;
+
+margin-bottom:25px;
+
+}
+.subtitle{
+
+font-family:'Great Vibes',cursive;
+
+font-size:45px;
+
+color:#5c4033;
+
+}
+.countdown-boxes{
+
+display:flex;
+
+justify-content:center;
+
+gap:25px;
+
+margin:30px 0;
+
+flex-wrap:wrap;
+
+}
+
+.time-box{
+
+width:130px;
+
+height:130px;
+
+background:rgba(255,255,255,0.55);
+
+backdrop-filter:blur(15px);
+
+border-radius:25px;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+box-shadow:
+0 8px 25px rgba(255,255,255,0.6);
+
+}
+
+.time-box span{
+
+font-size:48px;
+
+font-weight:bold;
+
+color:#5c4033;
+
+}
+
+.time-box p{
+
+font-size:18px;
+
+font-weight:600;
+
+margin-top:10px;
 
 }
