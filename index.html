@@ -89,13 +89,36 @@ background:#e9e9e9;
 
 <p>Please try again.</p>
 
-<button onclick="window.location.href='index1.html'">
+<button onclick="playMusicAndGo()">
 
 Retry
 
 </button>
 
 </div>
+<audio id="bgMusic">
+
+<source src="music.mp3" type="audio/mpeg">
+
+</audio>
+
+
+<script>
+
+function playMusicAndGo(){
+
+localStorage.setItem("music","play");
+
+let music =
+document.getElementById("bgMusic");
+
+music.play();
+
+window.location.href="index1.html";
+
+}
+
+</script>
 
 </body>
 
